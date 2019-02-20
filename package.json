@@ -1,0 +1,35 @@
+{
+  "name": "obj-list",
+  "version": "0.1.0",
+  "description": "Operations for managing an array of objects.",
+  "main": "dist/index.js",
+  "module": "src/obj-list.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "babel-tape-runner ./tests/obj-list.test.js | tap-difflet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisknowles/obj-list.git"
+  },
+  "keywords": [
+    "store",
+    "reactive"
+  ],
+  "author": "Chris Knowles <chris@chrisknowles.co>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "babel-tape-runner": "^3.0.0",
+    "rollup": "^1.2.2",
+    "rollup-plugin-butternut": "0.1.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "tap-difflet": "^0.7.1",
+    "tape": "^4.10.1"
+  },
+  "dependencies": {
+    "ramda": "^0.26.1"
+  }
+}
